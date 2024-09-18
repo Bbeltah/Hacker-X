@@ -18,7 +18,7 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
       config.AUTO_REACT = false;
       responseMessage = "AUTO_REACT has been disabled.";
     } else {
-      responseMessage = "Usage:\n- `autoreact on`: Enable Auto-React\n- `autoreact off`: Disable Auto-React";
+      responseMessage = "Usage:\n- `areact on`: Enable Auto-React\n- `areact off`: Disable Auto-React";
     }
 
     try {
