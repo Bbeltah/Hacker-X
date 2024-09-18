@@ -89,13 +89,15 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
           interactiveMessage: proto.Message.InteractiveMessage.create({
             body: proto.Message.InteractiveMessage.Body.create({
               text: `╭─────────────━┈⊷
-│🤖 ʙᴏᴛ ɴᴀᴍᴇ: xᴍᴅ-ʙᴇʟᴛᴀʜ
-│📍 ᴠᴇʀꜱɪᴏɴ: 1.0.0
-│👨‍💻 ᴏᴡɴᴇʀ : ʙᴇʟᴛᴀʜ ᴛᴇᴄʜ     
-│👤 ɴᴜᴍʙᴇʀ: wa.me/254114141192
-│📡 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
-│🛡 ᴍᴏᴅᴇ: *${mode}*
-│💫 ᴘʀᴇғɪx: [${pref}]
+│╭───────────⊷             
+│┃🤖 ʙᴏᴛ ɴᴀᴍᴇ: xᴍᴅ-ʙᴇʟᴛᴀʜ
+│┃📍 ᴠᴇʀꜱɪᴏɴ: 1.0.0
+│┃👨‍💻 ᴏᴡɴᴇʀ : ʙᴇʟᴛᴀʜ ᴛᴇᴄʜ     
+│┃👤 ɴᴜᴍʙᴇʀ: wa.me/254114141192
+│┃📡 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
+│┃🛡 ᴍᴏᴅᴇ: *${mode}*
+│┃💫 ᴘʀᴇғɪx: [${pref}]
+│╰───────────⊷
 ╰─────────────━┈⊷ `
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
@@ -103,8 +105,8 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
             }),
             header: proto.Message.InteractiveMessage.Header.create({
                 ...(await prepareWAMessageMedia({
-                image: {
-                  url: 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg',
+                  image: { 
+                    url: 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg'
                 },
                   { upload: Matrix.waUploadToServer })),
               title: '',
@@ -222,15 +224,17 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
     });
   }
       if (selectedId == "View All Menu") {
-        const str = `hey ${m.pushName} ${pushwish}
+        const str = `Hey ${m.pushName} ${pushwish}
 ╭─────────────━┈⊷
-│🤖 ʙᴏᴛ ɴᴀᴍᴇ: xᴍᴅ-ʙᴇʟᴛᴀʜ
-│📍 ᴠᴇʀꜱɪᴏɴ: 1.0.0
-│👨‍💻 ᴏᴡɴᴇʀ : ʙᴇʟᴛᴀʜ ᴛᴇᴄʜ     
-│👤 ɴᴜᴍʙᴇʀ: 919142294671
-│💻 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
-│🛡 ᴍᴏᴅᴇ: *${config.MODE}*
-│💫 ᴘʀᴇғɪx: [${pref}]
+│╭───────────⊷ 
+│┃🤖 ʙᴏᴛ ɴᴀᴍᴇ: xᴍᴅ-ʙᴇʟᴛᴀʜ
+│┃📍 ᴠᴇʀꜱɪᴏɴ: 1.0.0
+│┃👨‍💻 ᴏᴡɴᴇʀ : ʙᴇʟᴛᴀʜ ᴛᴇᴄʜ     
+│┃👤 ɴᴜᴍʙᴇʀ: 919142294671
+│┃💻 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
+│┃🛡 ᴍᴏᴅᴇ: *${config.MODE}*
+│┃💫 ᴘʀᴇғɪx: [${pref}]
+│╰──────────⊷
 ╰─────────────━┈⊷ 
 ╭━❮ 𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙴𝚁 ❯━╮
 ┃✰ ${prefix}𝙰𝚃𝚃𝙿
@@ -334,7 +338,7 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
    `;
         let fgg = {
             key: {
-                fromMe: false,
+                fromMe: true,
                 participant: `0@s.whatsapp.net`,
                 remoteJid: "status@broadcast"
             },
@@ -350,7 +354,7 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
             }
         };
        let { key } = await Matrix.sendMessage(m.from, {
-  image: { url :'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg' }, 
+  image: { url :"https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg" }, 
   caption: str, 
   contextInfo: { 
                   mentionedJid: [m.sender], 
@@ -389,7 +393,7 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
 ┃✰ ${prefix}𝚃𝚒𝚔𝚝𝚘𝚔
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image : { url : 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg'}, 
+  image : { url : "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg"}, 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -430,7 +434,7 @@ await Matrix.sendMessage(m.from, {
 ╰━━━━━━━━━━━━━━━⪼
      `
      await Matrix.sendMessage(m.from, {
-  image : { url : 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg'}, 
+  image : { url : "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg"}, 
    caption: str, 
   contextInfo: {
     mentionedJid: [m.sender], 
@@ -455,7 +459,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝙸𝚗𝚏𝚘𝚋𝚘𝚝
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-image : { url : 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg'}, 
+image : { url : "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg"}, 
  caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -494,7 +498,7 @@ image : { url : 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg'},
 ┃✰ ${prefix}𝚊𝚞𝚝𝚘𝚜𝚟𝚒𝚎𝚠
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
- image : { url : 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg'}, 
+ image : { url : "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg"}, 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -530,7 +534,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝙻𝚢𝚛𝚒𝚌𝚜
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image : { url : 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg'}, 
+  image : { url : "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg"}, 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -558,7 +562,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝙶𝚒𝚝𝚑𝚞𝚋𝚂𝚝𝚊𝚕𝚔
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
- image : { url : 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg'}, 
+ image : { url : "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg"}, 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -589,7 +593,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝚃𝚝𝚜
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image : { url : 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg'}, 
+  image : { url : "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg"}, 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -621,7 +625,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝙶𝚎𝚖𝚒𝚗𝚒
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image : { url : 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg'}, 
+  image : { url : "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg"}, 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -654,7 +658,7 @@ await Matrix.sendMessage(m.from, {
 ╰━━━━━━━━━━━━━━━⪼
      `
      await Matrix.sendMessage(m.from, {
-  image : { url : 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg'}, 
+  image : { url : "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg"}, 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
