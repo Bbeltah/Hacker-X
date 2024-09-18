@@ -104,7 +104,7 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
               text: "𝐁𝐎𝐓 𝐂𝐑𝐄𝐀𝐓𝐄𝐃 𝐁𝐘 𝐁𝐄𝐋𝐓𝐀𝐇 🎭\n\n© ᴘᴏᴡᴇʀᴇᴅ ʙʏ xᴍᴅ-ʙᴇʟᴛᴀʜ"
             }),
             header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./src/ethix.jpg')}, { upload: Matrix.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./src/InShot_20240918_194535508.jpg')}, { upload: Matrix.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: "",
@@ -430,7 +430,7 @@ await Matrix.sendMessage(m.from, {
 ╰━━━━━━━━━━━━━━━⪼
      `
      await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/ethix.jpg'), 
+  image: fs.readFileSync('./src/InShot_20240918_194535508.jpg'), 
   caption: str, 
   contextInfo: {
     mentionedJid: [m.sender], 
@@ -455,7 +455,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝙸𝚗𝚏𝚘𝚋𝚘𝚝
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/ethix.jpg'), 
+  image: fs.readFileSync('./src/InShot_20240918_194535508.jpg'), 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -494,7 +494,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝚊𝚞𝚝𝚘𝚜𝚟𝚒𝚎𝚠
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/ethix.jpg'), 
+  image: fs.readFileSync('./src/InShot_20240918_194535508.jpg'), 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -530,7 +530,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝙻𝚢𝚛𝚒𝚌𝚜
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/ethix.jpg'), 
+  image: fs.readFileSync('./src/InShot_20240918_194535508.jpg'), 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -589,7 +589,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝚃𝚝𝚜
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/ethix.jpg'), 
+  image: fs.readFileSync('./src/InShot_20240918_194535508.jpg'), 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -654,7 +654,7 @@ await Matrix.sendMessage(m.from, {
 ╰━━━━━━━━━━━━━━━⪼
      `
      await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/ethix.jpg'), 
+  image: fs.readFileSync('./src/InShot_20240918_194535508.jpg'), 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
