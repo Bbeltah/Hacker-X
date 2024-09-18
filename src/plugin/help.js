@@ -102,12 +102,16 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
               text: "𝐁𝐎𝐓 𝐂𝐑𝐄𝐀𝐓𝐄𝐃 𝐁𝐘 𝐁𝐄𝐋𝐓𝐀𝐇 🎭\n\n© ᴘᴏᴡᴇʀᴇᴅ ʙʏ xᴍᴅ-ʙᴇʟᴛᴀʜ"
             }),
             header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ img : url ("https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg")}, { upload: Matrix.waUploadToServer})), 
-                  title: ``,
-                  gifPlayback: true,
-                  subtitle: "",
-                  hasMediaAttachment: false  
-                }),
+                ...(await prepareWAMessageMedia({
+                image: {
+                  url: 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg',
+                },
+                  { upload: Matrix.waUploadToServer })),
+              title: '',
+              gifPlayback: true,
+              subtitle: '',
+              hasMediaAttachment: false,
+            }),
             nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
               buttons: [
                 {
@@ -204,7 +208,7 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '120363249960769123@newsletter',
-                  newsletterName: "XMD-BELTAH",
+                  newsletterName: "𝐗𝐌𝐃-𝐁𝐄𝐋𝐓𝐀𝐇 𝐁𝐎𝐓",
                   serverMessageId: 143
                 }
               }
@@ -346,7 +350,7 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
             }
         };
        let { key } = await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/ethix.jpg'), 
+  image: { url :'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg' }, 
   caption: str, 
   contextInfo: { 
                   mentionedJid: [m.sender], 
@@ -385,7 +389,7 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
 ┃✰ ${prefix}𝚃𝚒𝚔𝚝𝚘𝚔
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/ethix.jpg'), 
+  image : { url : 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg'}, 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -403,7 +407,7 @@ await Matrix.sendMessage(m.from, {
 }
    
    if ( selectedId == "Group Menu") {
-     const str = `╭───❮ *s ᴇ ʀ ᴠ ᴇ ʀ* ❯
+     const str = `╭───❮ *𝐗𝐌𝐃-𝐁𝐄𝐋𝐓𝐀𝐇 𝐁𝐎𝐓* ❯
 │➥ 𝚃𝙾𝚃𝙰𝙻 𝚁𝙰𝙼: ${formatBytes(totalMemoryBytes)}
 │➥ 𝙵𝚁𝙴𝙴 𝚁𝙰𝙼: ${formatBytes(freeMemoryBytes)}
 ╰━━━━━━━━━━━━━━━➥
@@ -426,8 +430,8 @@ await Matrix.sendMessage(m.from, {
 ╰━━━━━━━━━━━━━━━⪼
      `
      await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/ethix.jpg'), 
-  caption: str, 
+  image : { url : 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg'}, 
+   caption: str, 
   contextInfo: {
     mentionedJid: [m.sender], 
     forwardingScore: 9999,
@@ -439,7 +443,7 @@ await Matrix.sendMessage(m.from, {
 }
    
    if (selectedId == "Main Menu") {
-     const str =`╭───❮ *s ᴇ ʀ ᴠ ᴇ ʀ* ❯
+     const str =`╭───❮ *𝐗𝐌𝐃-𝐁𝐄𝐋𝐓𝐀𝐇 𝐁𝐎𝐓* ❯
 │➥ 𝚃𝙾𝚃𝙰𝙻 𝚁𝙰𝙼: ${formatBytes(totalMemoryBytes)}
 │➥ 𝙵𝚁𝙴𝙴 𝚁𝙰𝙼: ${formatBytes(freeMemoryBytes)}
 ╰━━━━━━━━━━━━━━━➥
@@ -451,15 +455,15 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝙸𝚗𝚏𝚘𝚋𝚘𝚝
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/ethix.jpg'), 
-  caption: str, 
+image : { url : 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg'}, 
+ caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '120363249960769123@newsletter',
-                  newsletterName: "Ethix-MD",
+                  newsletterName: "𝐗𝐌𝐃-𝐁𝐄𝐋𝐓𝐀𝐇 𝐁𝐎𝐓",
                   serverMessageId: 143
                 }
               }
@@ -469,7 +473,7 @@ await Matrix.sendMessage(m.from, {
 }
    
    if (selectedId == "Owner Menu") {
-     const str = `╭───❮ *s ᴇ ʀ ᴠ ᴇ ʀ* ❯
+     const str = `╭───❮ *𝐗𝐌𝐃-𝐁𝐄𝐋𝐓𝐀𝐇 𝐁𝐎𝐓* ❯
 │➥ 𝚃𝙾𝚃𝙰𝙻 𝚁𝙰𝙼: ${formatBytes(totalMemoryBytes)}
 │➥ 𝙵𝚁𝙴𝙴 𝚁𝙰𝙼: ${formatBytes(freeMemoryBytes)}
 ╰━━━━━━━━━━━━━━━➥
@@ -490,7 +494,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝚊𝚞𝚝𝚘𝚜𝚟𝚒𝚎𝚠
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/ethix.jpg'), 
+ image : { url : 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg'}, 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -508,7 +512,7 @@ await Matrix.sendMessage(m.from, {
 }
    
    if (selectedId == "Search Menu") {
-     const str =`╭───❮ *s ᴇ ʀ ᴠ ᴇ ʀ* ❯
+     const str =`╭───❮ *𝐗𝐌𝐃-𝐁𝐄𝐋𝐓𝐀𝐇 𝐁𝐎𝐓* ❯
 │➥ 𝚃𝙾𝚃𝙰𝙻 𝚁𝙰𝙼: ${formatBytes(totalMemoryBytes)}
 │➥ 𝙵𝚁𝙴𝙴 𝚁𝙰𝙼: ${formatBytes(freeMemoryBytes)}
 ╰━━━━━━━━━━━━━━━➥
@@ -526,7 +530,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝙻𝚢𝚛𝚒𝚌𝚜
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/ethix.jpg'), 
+  image : { url : 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg'}, 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -543,7 +547,7 @@ await Matrix.sendMessage(m.from, {
 });
 }
    if (selectedId == "Stalk Menu") {
-     const str =`╭───❮ *s ᴇ ʀ ᴠ ᴇ ʀ* ❯
+     const str =`╭───❮ *𝐗𝐌𝐃-𝐁𝐄𝐋𝐓𝐀𝐇 𝐁𝐎𝐓* ❯
 │➥ 𝚃𝙾𝚃𝙰𝙻 𝚁𝙰𝙼: ${formatBytes(totalMemoryBytes)}
 │➥ 𝙵𝚁𝙴𝙴 𝚁𝙰𝙼: ${formatBytes(freeMemoryBytes)}
 ╰━━━━━━━━━━━━━━━➥
@@ -554,7 +558,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝙶𝚒𝚝𝚑𝚞𝚋𝚂𝚝𝚊𝚕𝚔
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/ethix.jpg'), 
+ image : { url : 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg'}, 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -572,7 +576,7 @@ await Matrix.sendMessage(m.from, {
 }
    
    if (selectedId == "Tool Menu") {
-     const str =`╭───❮ *s ᴇ ʀ ᴠ ᴇ ʀ* ❯
+     const str =`╭───❮ *𝐗𝐌𝐃-𝐁𝐄𝐋𝐓𝐀𝐇 𝐁𝐎𝐓* ❯
 │➥ 𝚃𝙾𝚃𝙰𝙻 𝚁𝙰𝙼: ${formatBytes(totalMemoryBytes)}
 │➥ 𝙵𝚁𝙴𝙴 𝚁𝙰𝙼: ${formatBytes(freeMemoryBytes)}
 ╰━━━━━━━━━━━━━━━➥
@@ -585,7 +589,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝚃𝚝𝚜
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/ethix.jpg'), 
+  image : { url : 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg'}, 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -603,7 +607,7 @@ await Matrix.sendMessage(m.from, {
 }
    
    if (selectedId == "Ai Menu") {
-     const str =`╭───❮ *s ᴇ ʀ ᴠ ᴇ ʀ* ❯
+     const str =`╭───❮ *𝐗𝐌𝐃-𝐁𝐄𝐋𝐓𝐀𝐇 𝐁𝐎𝐓* ❯
 │➥ 𝚃𝙾𝚃𝙰𝙻 𝚁𝙰𝙼: ${formatBytes(totalMemoryBytes)}
 │➥ 𝙵𝚁𝙴𝙴 𝚁𝙰𝙼: ${formatBytes(freeMemoryBytes)}
 ╰━━━━━━━━━━━━━━━➥
@@ -617,7 +621,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝙶𝚎𝚖𝚒𝚗𝚒
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/ethix.jpg'), 
+  image : { url : 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg'}, 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -635,7 +639,7 @@ await Matrix.sendMessage(m.from, {
 }
    
    if (selectedId == "Converter Menu") {
-     const str =`╭───❮ *s ᴇ ʀ ᴠ ᴇ ʀ* ❯
+     const str =`╭───❮ *𝐗𝐌𝐃-𝐁𝐄𝐋𝐓𝐀𝐇 𝐁𝐎𝐓* ❯
 │➥ 𝚃𝙾𝚃𝙰𝙻 𝚁𝙰𝙼: ${formatBytes(totalMemoryBytes)}
 │➥ 𝙵𝚁𝙴𝙴 𝚁𝙰𝙼: ${formatBytes(freeMemoryBytes)}
 ╰━━━━━━━━━━━━━━━➥
@@ -650,7 +654,7 @@ await Matrix.sendMessage(m.from, {
 ╰━━━━━━━━━━━━━━━⪼
      `
      await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/ethix.jpg'), 
+  image : { url : 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg'}, 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
