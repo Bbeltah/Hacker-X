@@ -70,20 +70,20 @@ async function start() {
     try {
         const { state, saveCreds } = await useMultiFileAuthState(sessionDir);
         const { version, isLatest } = await fetchLatestBaileysVersion();
-        console.log(`🤖 Ethix-MD using WA v${version.join('.')}, isLatest: ${isLatest}`);
+        console.log(`🤖 XMD-BELTAH using WA v${version.join('.')}, isLatest: ${isLatest}`);
         
         const Matrix = makeWASocket({
             version,
             logger: pino({ level: 'silent' }),
             printQRInTerminal: useQR,
-            browser: ["Ethix-MD", "safari", "3.3"],
+            browser: ["XMD-BELTAH", "safari", "3.3"],
             auth: state,
             getMessage: async (key) => {
                 if (store) {
                     const msg = await store.loadMessage(key.remoteJid, key.id);
                     return msg.message || undefined;
                 }
-                return { conversation: "Ethix-MD whatsapp user bot" };
+                return { conversation: "XMD-BELTAH whatsapp user bot" };
             }
         });
 
@@ -96,7 +96,7 @@ async function start() {
             } else if (connection === 'open') {
                 if (initialConnection) {
                     console.log(chalk.green("😃 Integration Successful️ ✅"));
-                    Matrix.sendMessage(Matrix.user.id, { text: `😃 Integration Successful️ ✅` });
+                    Matrix.sendMessage(Matrix.user.id, { text: `𝐗𝐌𝐃-𝐁𝐄𝐋𝐓𝐀𝐇 𝐂𝐎𝐍𝐍𝐄𝐂𝐓𝐄𝐃 ✅\nᴏᴡɴᴇʀ : ʙᴇʟᴛᴀʜ ᴛᴇᴄʜ🇰🇪\nᴅᴇᴠᴇʟᴏᴘᴇʀ : wa.me/254114141192\n\n> ©𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗯𝘆 𝗕𝗲𝗹𝘁𝗮𝗵 𝗧𝗲𝗰𝗵 𝗧𝗲𝗮𝗺.` });
                     initialConnection = false;
                 } else {
                     console.log(chalk.blue("♻️ Connection reestablished after restart."));
