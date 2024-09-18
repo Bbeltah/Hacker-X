@@ -11,7 +11,7 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
     const end = new Date().getTime();
     const responseTime = (end - start) / 1000;
 
-    const text = `*_🔥⃝вσт ѕρєє∂: ${responseTime.toFixed(2)} s_*`;
+    const text = `𝗫𝗠𝗗-𝗕𝗘𝗟𝗧𝗔𝗛 𝗦𝗣𝗘𝗘𝗗: *${responseTime.toFixed(2)}* *MS*`;
     sock.sendMessage(m.from, { text }, { quoted: m });
   }
 }
