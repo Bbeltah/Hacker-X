@@ -64,17 +64,17 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
         console.log(`Executing scheduled task for ${groupSetting} at ${moment().format('HH:mm')} IST`);
         if (groupSetting === 'close') {
           await gss.groupSettingUpdate(m.from, 'announcement');
-          await gss.sendMessage(m.from, { text: "Group successfully closed." });
+          await gss.sendMessage(m.from, { text: "Group successfully closed🔐.\n\n> Members are not allowed to send messages in this group." });
         } else if (groupSetting === 'open') {
           await gss.groupSettingUpdate(m.from, 'not_announcement');
-          await gss.sendMessage(m.from, { text: "Group successfully opened." });
+          await gss.sendMessage(m.from, { text: "Group successfully opened🗿.\n\n> Now members can send endless messages." });
         }
       } catch (err) {
         console.error('Error during scheduled task execution:', err);
         await gss.sendMessage(m.from, { text: 'An error occurred while updating the group setting.' });
       }
     }, {
-      timezone: "Asia/Kolkata"
+      timezone: "Africa/Nairobi"
     });
 
     m.reply(`Group will be set to "${groupSetting}" at ${time} IST.`);
