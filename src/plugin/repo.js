@@ -11,7 +11,7 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
   const validCommands = ['repo', 'sc', 'script'];
 
   if (validCommands.includes(cmd)) {
-    const repoUrl = `https://api.github.com/repos/Ethix-Xsid/Ethix-MD-V2`;
+    const repoUrl = `https://api.github.com/repos/Beltahke/XMD-BELTAH`;
     
     await handleRepoCommand(m, Matrix, repoUrl);
   }
@@ -53,12 +53,12 @@ const handleRepoCommand = async (m, Matrix, repoUrl) => {
               text: messageText,
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
-              text: '© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴇᴛʜɪx-ᴍᴅ',
+              text: '© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ ᴛᴇᴄʜ 🇰🇪',
             }),
             header: proto.Message.InteractiveMessage.Header.create({
               ...(await prepareWAMessageMedia({
                 image: {
-                  url: 'https://telegra.ph/file/fbbe1744668b44637c21a.jpg',
+                  url: 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg',
                 },
               }, { upload: Matrix.waUploadToServer })),
               title: '',
@@ -85,8 +85,8 @@ const handleRepoCommand = async (m, Matrix, repoUrl) => {
                 {
                   name: 'cta_url',
                   buttonParamsJson: JSON.stringify({
-                    display_text: 'Join Our Community',
-                    url: 'https://whatsapp.com/channel/0029VaWJMi3GehEE9e1YsI1S',
+                    display_text: 'Follow Our Channel',
+                    url: 'https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F',
                   }),
                 },
               ],
