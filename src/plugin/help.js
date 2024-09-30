@@ -91,8 +91,8 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
               text: `╭━━━━❮ 𝐗𝐌𝐃-𝐁𝐄𝐋𝐓𝐀𝐇 ❯━━━━➥ 
 │╭─────────⊷ 
 │┃👨‍💻 ᴏᴡɴᴇʀ : ʙᴇʟᴛᴀʜ ᴛᴇᴄʜ
-│┃📍 ᴠᴇʀꜱɪᴏɴ: 1.0.0   
-│┃👤 ɴᴜᴍʙᴇʀ: wa.me/254114141192
+│┃📍 ᴠᴇʀꜱɪᴏɴ: 5G lite  
+│┃👤 ɴᴜᴍʙᴇʀ: 254114141192
 │┃💻 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
 │┃🛡 ᴍᴏᴅᴇ: *${config.MODE}*
 │┃💫 ᴘʀᴇғɪx: [${pref}]
@@ -119,10 +119,10 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
           })
         },
         {
-          "name": "quick_reply",
-          "buttonParamsJson": JSON.stringify({
-            display_text: "PING",
-            id: `${prefix}ping`
+         name: 'cta_url',
+                  buttonParamsJson: JSON.stringify({
+                    display_text: 'Follow Our Channel',
+                    url: 'https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F',
           })
         },
                 {
