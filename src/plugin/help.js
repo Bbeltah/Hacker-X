@@ -112,26 +112,26 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
             nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
               buttons: [
                 {
-         name: 'cta_url',
-                  buttonParamsJson: JSON.stringify({
-                    display_text: 'Join our Group',
-                    url: 'https://chat.whatsapp.com/CQvUnqaDK4fBjgMXvFEAsI', 
+         "name": "quick_reply",
+          "buttonParamsJson": JSON.stringify({
+            display_text: "Alive",
+            id: `${prefix}alive` 
           })
         },
         {
          name: 'cta_url',
                   buttonParamsJson: JSON.stringify({
-                    display_text: 'Follow Our Channel',
+                    display_text: '🏮Follow Our Channel🏮',
                     url: 'https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F',
           })
         },
                 {
                   "name": "single_select",
-                  "buttonParamsJson": `{"title":"🔖𝚻𝚫𝚸 𝐅𝚯𝚪 𝚯𝚸𝚵𝚴 𝚳𝚵𝚴𝐔",
+                  "buttonParamsJson": `{"title":"🔖Open XMD-BELTAH Menu🔖",
                  "sections":
                    [{
                     "title":"😎 𝐗𝐌𝐃-𝐁𝐄𝐋𝐓𝐀𝐇 𝐀𝐋𝐋 𝐌𝐄𝐍𝐔",
-                    "highlight_label":"🤩 𝛥𝐿𝐿𝛭𝛯𝛮𝑈",
+                    "highlight_label":"🤩ALL MENU",
                     "rows":[
                       {
                        "header":"",
