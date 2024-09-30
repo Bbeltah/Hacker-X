@@ -1,20 +1,22 @@
 ---
 
-# Ethix-MD-V2
+# XMD-BELTAH BOT
 
 <p align="center">
-  <a href="https://github.com/Ethix-Xsid"><img src="http://readme-typing-svg.herokuapp.com?color=red&center=true&vCenter=true&multiline=false&lines=Ethix-MD-+v2+MultiDevice;Developed+by+Ethix~Xsid;Give+star+and+forks+this+Repo+🌟" alt="EthixReadme"></a>
+  <a href="https://github.com/Beltahke"><img src="http://readme-typing-svg.herokuapp.com?color=red&center=true&vCenter=true&multiline=false&lines=XMD-BELTAH+v4+MultiDevice;Developed+by+Beltah~Tech;Give+star+and+forks+this+Repo+🌟" alt="BeltahReadme"></a>
 </p>
 
+
+  ✅ `INSTALLATION PROCEDURE` ✅
 ## 🚀 Getting Started
 
-To get started with Ethix-MD-V2, follow these steps:
+To get started with XMD-BELTAH, follow these steps:
 
 ### 1. Fork This Repository
 
 Start by forking this repository to your own GitHub account. Click the button below to fork:
 
-<a href='https://github.com/Ethix-Xsid/Ethix-MD-V2/fork' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/Fork This Repo-black?style=for-the-badge&logo=git&logoColor=white'/></a>
+<a href='https://github.com/Beltahke/XMD-BELTAH/fork' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/Fork This Repo-black?style=for-the-badge&logo=git&logoColor=white'/></a>
 
 ### 2. Get Session ID via Pair Code
 
@@ -24,7 +26,7 @@ You'll need a session ID to run the bot. Click the button below to obtain your s
 
 ## 🚀 Deployment Options
 
-You can deploy the Ethix-MD-V2 bot using two methods: **Heroku** or **Termux**. Choose the method that suits you best.
+You can deploy the XMD bot using two methods: **Heroku** or **Termux**. Choose the method that suits you best.
 
 ### Deploy to Heroku
 
@@ -67,7 +69,7 @@ You can also deploy the bot directly on your Android device using Termux. Here�
    Clone the forked repository using the following command:
 
    ```bash
-   git clone https://github.com/Ethix-Xsid/Ethix-MD-V2.git
+   git clone https://github.com/Beltahke/XMD-BELTAH.git
    ```
 
 4. **Navigate to the Project Directory:**
@@ -75,7 +77,7 @@ You can also deploy the bot directly on your Android device using Termux. Here�
    Change into the project directory:
 
    ```bash
-   cd Ethix-MD-V2
+   cd XMD-BELTAH
    ```
 
 5. **Set the `SESSION_ID` in the `.env` File:**
@@ -129,9 +131,9 @@ Stay connected with the latest updates and community by joining our official Wha
 - **Owner WhatsApp Number:** +919142294671
   - *Note:* Please save the owner's number in your contacts before sending a message.
 
-- **WhatsApp Channel:** [Join Here](https://whatsapp.com/channel/0029VaWJMi3GehEE9e1YsI1S)
+- **WhatsApp Channel:** [Join Here](https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F)
 
-- **WhatsApp Group:** [Join Here](https://chat.whatsapp.com/E3PWxdvLc7ZCp1ExOCkEGp)
+- **WhatsApp Group:** [Join Here](https://chat.whatsapp.com/CQvUnqaDK4fBjgMXvFEAsI)
 
 ## ⚠️ Reminder
 
@@ -140,3 +142,8 @@ Stay connected with the latest updates and community by joining our official Wha
 - I am not responsible for any bans or misuse of the bot. Please keep this warning in mind before proceeding.
 
 ---
+
+
+
+
+©Trusted THE process😌...I AM BELTAH TECH 254 🇰🇪 
