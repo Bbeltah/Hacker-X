@@ -128,7 +128,7 @@ You can also deploy the bot directly on your Android device using Termux. Hereâ€
 
 Stay connected with the latest updates and community by joining our official WhatsApp group and channel. You can also contact the owner directly.
 
-- **Owner WhatsApp Number:** +919142294671
+- **Owner WhatsApp Number:** +254737681758
   - *Note:* Please save the owner's number in your contacts before sending a message.
 
 - **WhatsApp Channel:** [Join Here](https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F)
