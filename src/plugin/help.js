@@ -112,10 +112,10 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
             nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
               buttons: [
                 {
-          "name": "quick_reply",
-          "buttonParamsJson": JSON.stringify({
-            display_text: "ALIVE",
-            id: `${prefix}alive`
+         name: 'cta_url',
+                  buttonParamsJson: JSON.stringify({
+                    display_text: 'Join our Group',
+                    url: 'https://chat.whatsapp.com/CQvUnqaDK4fBjgMXvFEAsI', 
           })
         },
         {
