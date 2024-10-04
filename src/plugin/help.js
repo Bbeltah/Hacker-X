@@ -88,19 +88,20 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
           },
           interactiveMessage: proto.Message.InteractiveMessage.create({
             body: proto.Message.InteractiveMessage.Body.create({
-              text: `╭━━━━❮ 𝐗𝐌𝐃-𝐁𝐄𝐋𝐓𝐀𝐇 ❯━━━━➥ 
-│╭─────────⊷ 
-│┃👨‍💻 ᴏᴡɴᴇʀ : ʙᴇʟᴛᴀʜ ᴛᴇᴄʜ
-│┃📍 ᴠᴇʀꜱɪᴏɴ: 5G lite  
-│┃👤 ɴᴜᴍʙᴇʀ: 254114141192
-│┃💻 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
-│┃🛡 ᴍᴏᴅᴇ: *${config.MODE}*
-│┃💫 ᴘʀᴇғɪx: [${pref}]
-│╰──────────⊷
+              text: `╭─────═[𝐁𝐄𝐋𝐓𝐀𝐇 𝐇𝐀𝐂𝐊𝐈𝐍𝐆 𝐓𝐄𝐀𝐌]═─────⋆
+│╭───────────────···
+┴│▸ 👨‍💻 ᴏᴡɴᴇʀ : ʙᴇʟᴛᴀʜ ᴛᴇᴄʜ
+✧│▸ 📍 ᴠᴇʀꜱɪᴏɴ: 5G lite  
+✧│▸ 👤 ɴᴜᴍʙᴇʀ: 254114141192
+✧│▸ 💻 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
+✧│▸ 🛡 ᴍᴏᴅᴇ: *${config.MODE}*
+✧│▸ 💫 ᴘʀᴇғɪx: [${pref}]
+✧│▸ 🏮 ʀᴀᴍ: 79/256 ɢʙ
+┬╰────────────────···
 ╰─────────────━┈⊷ `
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
-              text: "𝐁𝐎𝐓 𝐂𝐑𝐄𝐀𝐓𝐄𝐃 𝐁𝐘 𝐁𝐄𝐋𝐓𝐀𝐇 🎭\n\n© ᴘᴏᴡᴇʀᴇᴅ ʙʏ xᴍᴅ-ʙᴇʟᴛᴀʜ"
+              text: "𝐁𝐎𝐓 𝐂𝐑𝐄𝐀𝐓𝐄𝐃 𝐁𝐘 𝐁𝐄𝐋𝐓𝐀𝐇 𝐇𝐀𝐂𝐊𝐈𝐍𝐆 𝐓𝐄𝐀𝐌\n\n© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ.ᴛᴇᴄʜ.ᴄᴏ.ᴋᴇ🇰🇪"
             }),
             header: proto.Message.InteractiveMessage.Header.create({
                 ...(await prepareWAMessageMedia({ image : fs.readFileSync('./src/IMG-20240918-WA0013~2.jpg')}, { upload: Matrix.waUploadToServer})), 
@@ -114,20 +115,20 @@ const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0
                 {
          "name": "quick_reply",
           "buttonParamsJson": JSON.stringify({
-            display_text: "Alive",
+            display_text: "😌Alive😌",
             id: `${prefix}alive` 
           })
         },
         {
          name: 'cta_url',
                   buttonParamsJson: JSON.stringify({
-                    display_text: '🏮Follow Our Channel🏮',
+                    display_text: '🙂‍↔️Follow Our Channel🙂‍↔️',
                     url: 'https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F',
           })
         },
                 {
                   "name": "single_select",
-                  "buttonParamsJson": `{"title":"🔖Open XMD-BELTAH Menu🔖",
+                  "buttonParamsJson": `{"title":"🙂‍↕️Open XMD-BELTAH Menu🙂‍↕️",
                  "sections":
                    [{
                     "title":"😎 𝐗𝐌𝐃-𝐁𝐄𝐋𝐓𝐀𝐇 𝐀𝐋𝐋 𝐌𝐄𝐍𝐔",
