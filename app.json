@@ -1,10 +1,10 @@
 {
-  "name": "XMD-BELTAH",
+  "name": "HACKER-X",
   "description": " Whatsapp bot.",
   "keywords": [
     "whatsapp bot"
   ],
-  "repository": "https://github.com/Beltahke/XMD-BELTAH",
+  "repository": "https://github.com/Bbeltah/Hacker-X",
   "stack": "container",
   "env": { 
       "SESSION_ID": {
